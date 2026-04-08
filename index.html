@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website tự học Hóa 12: hệ thống chuyên đề, mẹo ôn thi THPT, bài tập mẫu và trắc nghiệm có giải thích." />
+  <title>Hướng dẫn học Hóa 12 | Tự học & Ôn thi THPT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="brand">🧪 Học Hóa 12</div>
+    <nav class="nav">
+      <a href="#home">Trang chủ</a>
+      <a href="#topics">Chuyên đề</a>
+      <a href="#quiz">Trắc nghiệm</a>
+      <a href="#tips">Mẹo ôn thi</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" aria-label="Đổi giao diện">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">Lớp 12 • Ôn thi THPT</p>
+      <h1>Học Hóa 12 dễ hiểu – hệ thống – bám sát ôn thi</h1>
+      <p>Website tự học giúp em nắm chắc lý thuyết trọng tâm, luyện bài tập theo dạng và tăng tốc trắc nghiệm với mẹo làm nhanh.</p>
+      <div class="hero-actions">
+        <a href="#topics" class="btn primary">Bắt đầu học</a>
+        <a href="#topics" class="btn">Ôn lý thuyết</a>
+        <a href="#quiz" class="btn">Làm trắc nghiệm</a>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Bộ lọc học tập">
+      <label class="search-wrap">
+        🔎
+        <input id="searchInput" type="search" placeholder="Tìm theo chuyên đề, công thức, phản ứng..." />
+      </label>
+      <select id="topicSelect" aria-label="Chọn chuyên đề"></select>
+      <div class="filter-row" id="typeFilters"></div>
+      <div class="progress-wrap">
+        <div>
+          <strong>Tiến độ học tập</strong>
+          <p><span id="progressText">0/0</span> chuyên đề đã hoàn thành</p>
+        </div>
+        <div class="progress-bar" aria-hidden="true">
+          <span id="progressFill"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="topics" class="topics-section">
+      <div class="section-heading">
+        <h2>Chuyên đề kiến thức trọng tâm</h2>
+        <p>Đầy đủ lý thuyết, phản ứng minh họa, mẹo nhớ, lỗi sai và bài tập mẫu theo đúng chương trình Hóa 12.</p>
+      </div>
+      <div id="topicGrid" class="topic-grid"></div>
+    </section>
+
+    <section id="topicDetail" class="topic-detail hidden"></section>
+
+    <section id="quiz" class="quiz-section">
+      <div class="section-heading">
+        <h2>Trắc nghiệm luyện tập</h2>
+        <p>Chọn chuyên đề, làm bài nhanh và xem giải thích ngay sau khi chọn đáp án.</p>
+      </div>
+      <div class="quiz-toolbar">
+        <select id="quizTopicFilter"></select>
+        <button id="restartQuiz" class="btn">Làm lại</button>
+      </div>
+      <div id="quizCard" class="quiz-card"></div>
+    </section>
+
+    <section id="tips" class="tips-section">
+      <div class="section-heading">
+        <h2>Mẹo học & chiến lược ôn thi</h2>
+      </div>
+      <div id="tipsGrid" class="tips-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Hướng dẫn học Hóa 12</strong> — Nền tảng tự học ngắn gọn, dễ nhớ, bám sát đề thi THPT.</p>
+    <p>Khu vực liên hệ/nguồn tài liệu sẽ được cập nhật ở phiên bản tiếp theo.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
